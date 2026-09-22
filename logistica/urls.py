@@ -1,6 +1,11 @@
 from django.urls import path, include
 from rest_framework.routers import DefaultRouter
-from .views import ProductoViewSet, LoteStockViewSet, MermaViewSet, MovimientoViewSet
+from .views import (
+    ProductoViewSet, 
+    LoteStockViewSet, 
+    MermaViewSet, 
+    MovimientoViewSet
+)
 
 router = DefaultRouter()
 router.register(r'productos', ProductoViewSet)

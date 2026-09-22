@@ -3,6 +3,10 @@ from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    # Conectamos toda la API de logistica bajo la ruta api/v1/
+    
+    # 1. Todo lo que empiece por api/v1/ se va a las rutas de la API
     path('api/v1/', include('logistica.urls')),
+    
+    # 2. Las rutas web directas (como /productos/) irán aquí
+    path('', include('logistica.web_urls')), 
 ]

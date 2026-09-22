@@ -1,0 +1,119 @@
+/* tu_app/static/css/estilos.css */
+
+/* Variables y diseño corporativo minimalista */
+:root {
+    --bg-dark: #000000;
+    --text-light: #ffffff;
+    --text-muted: #cccccc;
+    --border-color: #e0e0e0;
+    --body-bg: #f9f9f9;
+}
+
+/* Reset y estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: var(--body-bg);
+    color: #333333;
+}
+
+/* --- Header Principal --- */
+.main-header {
+    background-color: var(--bg-dark);
+    color: var(--text-light);
+    display: flex;
+    align-items: center;
+    padding: 12px 20px;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo-icon {
+    width: 38px;
+    height: 38px;
+    object-fit: contain;
+}
+
+.logo-text h1 {
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    line-height: 1.2;
+}
+
+.logo-text span {
+    font-size: 11px;
+    color: var(--text-muted);
+    text-transform: lowercase;
+}
+
+/* --- Sub-cabecera / Barra de Navegación --- */
+.sub-header {
+    background-color: #ffffff;
+    border-bottom: 1px solid var(--border-color);
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+}
+
+.back-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    color: #333333;
+    padding: 4px 8px;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+}
+
+.back-button:hover {
+    background-color: #f0f0f0;
+}
+
+/* --- Contenido Principal de la Página --- */
+.content {
+    padding: 24px 20px;
+}
+
+/* --- Botones personalizados --- */
+.btn-agregar {
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+    color: white;
+}
+
+.btn-agregar:hover {
+    background-color: #0b5ed7;
+    border-color: #0a58ca;
+    color: white;
+}
+
+.btn-eliminar-dark {
+    background-color: #842029; /* Rojo oscuro sobrio */
+    border-color: #751a22;
+    color: white;
+}
+
+.btn-eliminar-dark:hover {
+    background-color: #58151c;
+    border-color: #4c1218;
+    color: white;
+}
+
+/* --- Efecto borroso elegante para los modales --- */
+.modal-backdrop.show {
+    backdrop-filter: blur(5px);
+    background-color: rgba(0, 0, 0, 0.5);
+}
