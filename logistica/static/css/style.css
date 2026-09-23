@@ -1,6 +1,3 @@
-/* tu_app/static/css/estilos.css */
-
-/* Variables y diseño corporativo minimalista */
 :root {
     --bg-dark: #000000;
     --text-light: #ffffff;
@@ -9,7 +6,6 @@
     --body-bg: #f9f9f9;
 }
 
-/* Reset y estilos generales */
 * {
     margin: 0;
     padding: 0;
@@ -22,7 +18,6 @@ body {
     color: #333333;
 }
 
-/* --- Header Principal --- */
 .main-header {
     background-color: var(--bg-dark);
     color: var(--text-light);
@@ -56,7 +51,6 @@ body {
     text-transform: lowercase;
 }
 
-/* --- Sub-cabecera / Barra de Navegación --- */
 .sub-header {
     background-color: #ffffff;
     border-bottom: 1px solid var(--border-color);
@@ -82,12 +76,10 @@ body {
     background-color: #f0f0f0;
 }
 
-/* --- Contenido Principal de la Página --- */
 .content {
     padding: 24px 20px;
 }
 
-/* --- Botones personalizados --- */
 .btn-agregar {
     background-color: #0d6efd;
     border-color: #0d6efd;
@@ -101,7 +93,7 @@ body {
 }
 
 .btn-eliminar-dark {
-    background-color: #842029; /* Rojo oscuro sobrio */
+    background-color: #842029;
     border-color: #751a22;
     color: white;
 }
@@ -112,8 +104,25 @@ body {
     color: white;
 }
 
-/* --- Efecto borroso elegante para los modales --- */
 .modal-backdrop.show {
     backdrop-filter: blur(5px);
     background-color: rgba(0, 0, 0, 0.5);
 }
+
+.btn-circle-back {
+            width: 38px;
+            height: 38px;
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #ffffff;
+            border: 1px solid #ced4da;
+            color: #212529;
+            text-decoration: none;
+            transition: all 0.2s ease-in-out;
+        }
+        .btn-circle-back:hover {
+            background-color: #e9ecef;
+            color: #000;
+        }
